@@ -11,6 +11,8 @@ finish-args:
   - --socket=wayland
   - --talk-name=org.gtk.vfs.*
   - --filesystem=xdg-run/gvfsd
+  # Access to file system from syntax files
+  - --filesystem=home
 modules:
   - name: spread-sheet-widget
     buildsystem: autotools
