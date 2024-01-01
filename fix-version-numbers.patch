@@ -1,0 +1,20 @@
+diff --git a/doc/org.gnu.pspp.metainfo.xml.in b/doc/org.gnu.pspp.metainfo.xml.in
+index 2583e7dc19..796152b5e8 100644
+--- a/doc/org.gnu.pspp.metainfo.xml.in
++++ b/doc/org.gnu.pspp.metainfo.xml.in
+@@ -63,15 +63,6 @@
+     <release version="2.0.0" date="2023-12-31">
+       <url>https://git.savannah.gnu.org/cgit/pspp.git/tree/NEWS?h=v2.0.0</url>
+     </release>
+-    <release version="2.0.0-pre3" date="2023-11-02">
+-      <url>https://git.savannah.gnu.org/cgit/pspp.git/tree/NEWS?h=v2.0.0-pre3</url>
+-    </release>
+-    <release version="2.0.0-pre2" date="2023-10-31">
+-      <url>https://git.savannah.gnu.org/cgit/pspp.git/tree/NEWS?h=v2.0.0-pre2</url>
+-    </release>
+-    <release version="2.0.0-pre1" date="2023-05-06">
+-      <url>https://git.savannah.gnu.org/cgit/pspp.git/tree/NEWS?h=v2.0.0-pre1</url>
+-    </release>
+     <release version="1.6.2" date="2022-07-01">
+       <url>https://git.savannah.gnu.org/cgit/pspp.git/tree/NEWS?h=v1.6.2</url>
+     </release>
