@@ -1,6 +1,6 @@
 app-id: org.gnu.pspp
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: '45'
 sdk: org.gnome.Sdk
 command: psppire
 finish-args:
@@ -26,9 +26,18 @@ modules:
       - type: archive
         url: https://ftp.gnu.org/gnu/gsl/gsl-2.7.1.tar.gz
         sha256: dcb0fbd43048832b757ff9942691a8dd70026d5da0ff85601e52687f6deeb34b
+  - name: gtksourceview
+    buildsystem: meson
+    sources:
+      - type: archive
+        url: https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz
+        sha256: 7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d
   - name: pspp
     buildsystem: autotools
     sources:
       - type: archive
-        url: https://ftp.gnu.org/gnu/pspp/pspp-1.6.2.tar.gz
-        sha256: 73294ca2f5b2f7fc41bbf8b78c5888c8075f43c6097fd482abb04f85ab0847b6
+        url: https://ftp.gnu.org/gnu/pspp/pspp-2.0.0.tar.gz
+        sha256: a8f6cb886af5b083843579bcd6fb191c054acce28cc68b58e7c5f09996a2d8df
+      - type: patch
+        paths:
+          - fix-version-numbers.patch
