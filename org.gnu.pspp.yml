@@ -13,6 +13,18 @@ finish-args:
   - --filesystem=xdg-run/gvfsd
   # Access to file system from syntax files
   - --filesystem=home
+cleanup:
+ - /include
+ - /lib/girepository-1.0
+ - /lib/pkgconfig
+ - /share/aclocal
+ - /share/doc
+ - /share/gir-1.0
+ - /share/info
+ - /share/man
+ - /share/vala
+ - '*.la'
+ - '*.a'
 modules:
   - name: spread-sheet-widget
     buildsystem: autotools
